@@ -84,7 +84,7 @@ void projectile(XY* xycoord)
 
 
 	for (i = 0; i < XSize+1; i++) {
-		xycoord[i].xc = (int)(vlc*(double)radcos(theta) / XSize * i * time*amdx); // =i 
+		xycoord[i].xc = (int)(vlc*(double)radcos(theta) / xt * i * time); // =i 
 		// xycoord[i].xc = (int)(vlc*(double)radcos(theta) * i * time/xt); 
 	}
 	for (i = 0; i < XSize+1; i++) {
